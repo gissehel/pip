@@ -3,8 +3,9 @@
   <title>Picture in picture bookmarklet installation</title>
 </head>
 <body>
-<p>This page let you install a bookmarklet to see the main video (the first one with max heigh on the current page) on the current page with the new mode "Picture on picture" (<a href='https://caniuse.com/#feat=picture-in-picture'>See the can-i-use reference about picture in picture</a>).</p>
-<p>To install the bookmarklet : Drag'n'drop the link : <a href="javascript:(()=>{([...document.getElementsByTagName('video')].reduce((prev,current)=>prev.offsetHeight>current.offsetHeight?prev:current,{requestPictureInPicture:()=>Promise.reject('No video found')}).requestPictureInPicture()).catch(err=>alert(err));})()">PiP</a> into the bookmarks bar of your browser.</p>
-<p>To use the bookmarklet : On a page with a video, just click on the "PiP" link and the video will appear in PiP mode.</p>
+  <p>This page let you install a bookmarklet to see the main video (the first one with max heigh on the current page) on the current page with the new mode "Picture on picture" (<a href='https://caniuse.com/#feat=picture-in-picture'>See the can-i-use reference about picture in picture</a>).</p>
+  <p>To install the bookmarklet : Drag'n'drop the link : <a href="javascript:(()=>{([...document.getElementsByTagName('video')].reduce((prev,current)=>prev.offsetHeight>current.offsetHeight?prev:current,{requestPictureInPicture:()=>Promise.reject('No video found')}).requestPictureInPicture()).catch(err=>alert(err));})()">PiP</a> into the bookmarks bar of your browser.</p>
+  <p>To use the bookmarklet : On a page with a video, just click on the "PiP" link and the video will appear in PiP mode.</p>
+  <p>Github project : <a href='https://github.com/gissehel/pip/'>https://github.com/gissehel/pip/</a></p>
 </body>
 </html>
